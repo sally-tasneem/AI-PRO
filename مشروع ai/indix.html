@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الهوية البصرية والمحفظة الاحترافية | بوظة وحلويات سويتي</title>
+    <!-- خطوط عربية فاخرة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <style>
+        :root {
+            --royal-green: #184332;
+            --dark-brown: #2C1818;
+            --warm-gold: #C59B27;
+            --cream-bg: #FAF6F0;
+            --cream-card: #F3ECE1;
+        }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--cream-bg);
+            color: var(--dark-brown);
+            scroll-behavior: smooth;
+        }
+        .font-amiri { font-family: 'Amiri', serif; }
+        .bg-royal-green { background-color: var(--royal-green); }
+        .text-royal-green { color: var(--royal-green); }
+        .bg-dark-brown { background-color: var(--dark-brown); }
+        .text-dark-brown { color: var(--dark-brown); }
+        .border-warm-gold { border-color: var(--warm-gold); }
+        .text-warm-gold { color: var(--warm-gold); }
+        .bg-cream-card { background-color: var(--cream-card); }
+        
+        /* سلايدر الهيرو العريض */
+        .hero-swiper {
+            width: 100%;
+            height: 520px;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(24, 67, 50, 0.15);
+        }
+        .hero-swiper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: #FAF6F0 !important;
+            background: rgba(24, 67, 50, 0.8);
+            width: 46px !important;
+            height: 46px !important;
+            border-radius: 50%;
+        }
+        .swiper-button-next:after, .swiper-button-prev:after { font-size: 18px !important; }
+        .swiper-pagination-bullet-active { background: var(--royal-green) !important; }
+
+        /* تنسيق الصور الطولية (للمطبوعات والبطاقات) */
+        .portrait-img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            border-radius: 1rem;
+            border: 1px solid rgba(197, 155, 39, 0.3);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        /* تنسيق الصور الأفقية بعرض ضخم وارتفاع واسع (3 فوق و 3 تحت) لتظهر كاملة وواضحة */
+        .landscape-img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 1rem 1rem 0 0;
+            border-bottom: 1px solid rgba(197, 155, 39, 0.3);
+        }
+
+        /* مقاس فيديو الريلز الطولي (9:16) */
+        .reel-video-container {
+            width: 100%;
+            max-width: 320px;
+            aspect-ratio: 9 / 16;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ==================== الصفحة الأولى: الهوية، المتجر، والمنتجات الفاخرة ==================== -->
+    <main id="page-1" class="block">
+        
+        <!-- الهيدر: عنوان بالمنتصف وتحته السلايدر مباشرة (بدون Navbar) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-14">
+            <div class="text-center max-w-3xl mx-auto mb-8">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-royal-green/10 text-royal-green font-bold text-sm mb-3 border border-royal-green/20">
+                    حمص - سوريا - شارع الميدان
+                </span>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-royal-green mb-4 leading-tight">
+                    بوظة وحلويات سويتي
+                </h1>
+                <p class="text-base md:text-lg text-dark-brown/80">
+                    ملف الهوية البصرية المتكاملة والخطة التسويقية لأعرق مذاق للبوظة العربية والحلويات الشرقية الفاخرة.
+                </p>
+            </div>
+
+            <!-- سلايدر صور المتجر (من الداخل والخارج) -->
+            <div class="swiper hero-swiper border-2 border-warm-gold/40 mb-12">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/h1.jpg" alt="واجهة متجر سويتي الخارجية"></div>
+                    <div class="swiper-slide"><img src="img/h2.jpg" alt="تصميم متجر سويتي الداخلي"></div>
+                    <div class="swiper-slide"><img src="img/h3.jpg" alt="أقسام عرض الحلويات والمكسرات"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- قسم منتجاتنا الفاخرة المميزة (توزيع 3 فوق و 3 تحت بكاردات عريضة وصور ضخمة كاملة) -->
+        <section class="py-16 bg-cream-card border-y border-warm-gold/25">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-royal-green mb-3">
+                        منتجاتنا الفاخرة وعالم الضيافة
+                    </h2>
+                    <p class="text-dark-brown/75">تشكيلة مختارة بعناية فائقة من أشهى أصناف المذاق الشامي الأصيل</p>
+                </div>
+                
+                <!-- شبكة متجاوبة 3 فوق و 3 تحت (3 أعمدة واسعة) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+                    
+                    <!-- المنتج 1 -->
+                    <div class="bg-white rounded-3xl shadow-xl border border-warm-gold/30 flex flex-col justify-between overflow-hidden transform hover:-translate-y-1.5 transition duration-300 text-center">
+                        <div>
+                            <img src="img/p3.jpg" alt="المبرومة والبلورية" class="landscape-img">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-royal-green">المبرومة والبلورية</h3>
+                        </div>
+                    </div>
+
+                    <!-- المنتج 2 -->
+                    <div class="bg-white rounded-3xl shadow-xl border border-warm-gold/30 flex flex-col justify-between overflow-hidden transform hover:-translate-y-1.5 transition duration-300 text-center">
+                        <div>
+                            <img src="img/p2.jpg" alt="تشكيلة البقلاوة" class="landscape-img">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-royal-green">تشكيلة البقلاوة</h3>
+                        </div>
+                    </div>
+
+                    <!-- المنتج 3 -->
+                    <div class="bg-white rounded-3xl shadow-xl border border-warm-gold/30 flex flex-col justify-between overflow-hidden transform hover:-translate-y-1.5 transition duration-300 text-center">
+                        <div>
+                            <img src="img/p4.jpg" alt="الكنافة الشامية" class="landscape-img">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-royal-green">الكنافة الشامية</h3>
+                        </div>
+                    </div>
+
+                    <!-- المنتج 4 (بوظة شامية) -->
+                    <div class="bg-white rounded-3xl shadow-xl border border-warm-gold/30 flex flex-col justify-between overflow-hidden transform hover:-translate-y-1.5 transition duration-300 text-center">
+                        <div>
+                            <img src="img/p5.jpg" alt="بوظة شامية" class="landscape-img">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-royal-green">بوظة شامية</h3>
+                        </div>
+                    </div>
+
+                    <!-- المنتج 5 (بلورية بالفستق الحلبي) -->
+                    <div class="bg-white rounded-3xl shadow-xl border border-warm-gold/30 flex flex-col justify-between overflow-hidden transform hover:-translate-y-1.5 transition duration-300 text-center">
+                        <div>
+                            <img src="img/p1.jpg" alt="بلورية بالفستق الحلبي" class="landscape-img">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-royal-green">بلورية بالفستق الحلبي</h3>
+                        </div>
+                    </div>
+
+                    <!-- المنتج 6 (العوامات الذهبية) -->
+                    <div class="bg-white rounded-3xl shadow-xl border border-warm-gold/30 flex flex-col justify-between overflow-hidden transform hover:-translate-y-1.5 transition duration-300 text-center">
+                        <div>
+                            <img src="img/p6.jpg" alt="العوامات الذهبية" class="landscape-img">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl text-royal-green">العوامات الذهبية</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- الهوية والألوان والشعار -->
+        <section class="py-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-royal-green mb-2">
+                    الهوية البصرية والشعار الرسمي
+                </h2>
+                <p class="text-dark-brown/75">لوحة الألوان الملكية والخطوط المعتمدة للمشروع</p>
+            </div>
+
+            <!-- عرض اللوجو -->
+            <div class="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow-md border border-warm-gold/40 mb-10 text-center">
+                <h3 class="font-bold text-lg text-royal-green mb-4">الشعار الرسمي (Logo Showcase)</h3>
+                <img src="img/logo.jpg" alt="الشعار الرسمي لسويتي" class="w-full rounded-xl border shadow-inner">
+            </div>
+
+            <!-- لوحة الألوان والخطوط -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-7 bg-white p-6 rounded-2xl border border-warm-gold/30 shadow-sm">
+                    <h3 class="font-bold text-lg mb-5 text-dark-brown">لوحة الألوان (Color Palette)</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <div class="rounded-xl overflow-hidden bg-white shadow-sm border">
+                            <div class="h-28 bg-[#184332]"></div>
+                            <div class="p-2 text-center"><p class="font-bold text-xs">الأخضر الملكي</p><code class="text-[10px] text-gray-500">#184332</code></div>
+                        </div>
+                        <div class="rounded-xl overflow-hidden bg-white shadow-sm border">
+                            <div class="h-28 bg-[#2C1818]"></div>
+                            <div class="p-2 text-center"><p class="font-bold text-xs">البني الشرقي</p><code class="text-[10px] text-gray-500">#2C1818</code></div>
+                        </div>
+                        <div class="rounded-xl overflow-hidden bg-white shadow-sm border">
+                            <div class="h-28 bg-[#C59B27]"></div>
+                            <div class="p-2 text-center"><p class="font-bold text-xs">الذهبي الفاخر</p><code class="text-[10px] text-gray-500">#C59B27</code></div>
+                        </div>
+                        <div class="rounded-xl overflow-hidden bg-white shadow-sm border">
+                            <div class="h-28 bg-[#FAF6F0] border-b"></div>
+                            <div class="p-2 text-center"><p class="font-bold text-xs">الكريمي الدافئ</p><code class="text-[10px] text-gray-500">#FAF6F0</code></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-warm-gold/30 shadow-sm flex flex-col justify-center space-y-4">
+                    <h3 class="font-bold text-lg text-dark-brown">الخطوط الرسمية</h3>
+                    <div class="p-3.5 rounded-xl bg-cream-card border-r-4 border-royal-green">
+                        <span class="text-xs font-bold text-royal-green">خط العناوين (Amiri)</span>
+                        <p class="font-amiri text-2xl mt-1">بوظة وحلويات سويتي</p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-cream-card border-r-4 border-warm-gold">
+                        <span class="text-xs font-bold text-dark-brown/70">خط النصوص (Cairo)</span>
+                        <p class="text-sm font-bold mt-1">أصالة المذاق الشامي والبوظة العربية</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- بطاقة العمل والكرت الشخصي -->
+        <section class="py-14 bg-cream-card border-t border-warm-gold/25">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-royal-green text-center mb-3">
+                    بطاقة تعريف المحل (الكرت الشخصي)
+                </h2>
+                <p class="text-center text-dark-brown/75 mb-10">تصميم الوجهين للكرت مع بيانات التواصل في شارع الميدان</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white p-5 rounded-2xl shadow-md border border-warm-gold/30">
+                        <span class="block font-bold text-royal-green mb-3">الوجه الأمامي (الشعار والهوية)</span>
+                        <img src="img/p7.jpg" alt="وجه الكرت الأمامي" class="w-full h-64 object-cover rounded-xl border">
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-md border border-warm-gold/30">
+                        <span class="block font-bold text-royal-green mb-3">الوجه الخلفي (معلومات التواصل)</span>
+                        <img src="img/p8.jpg" alt="وجه الكرت الخلفي" class="w-full h-64 object-cover rounded-xl border">
+                    </div>
+                </div>
+
+                <!-- زر الانتقال للصفحة الثانية -->
+                <div class="mt-14 text-center">
+                    <button onclick="switchPage(2)" class="bg-royal-green text-[#FAF6F0] px-10 py-4 rounded-2xl font-bold text-lg shadow-lg hover:bg-[#113024] transition inline-flex items-center gap-3 border-2 border-warm-gold">
+                        <span>الانتقال للصفحة الثانية: المطبوعات والفيديو الإعلاني والخطة التسويقية</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== الصفحة الثانية: المطبوعات، التغليف، الفيديو الإعلاني، والخطة التسويقية ==================== -->
+    <main id="page-2" class="hidden">
+        
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-14">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <!-- الإطار الدائري الأخضر الفاخر للعنوان -->
+                <span class="inline-block px-5 py-2 rounded-full bg-royal-green/10 text-royal-green font-bold text-sm mb-3 border-2 border-royal-green/30 shadow-sm">
+                    الصفحة الثانية من المحفظة الاحترافية
+                </span>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-royal-green mb-4">
+                    المطبوعات، الفيديو الإعلاني، والخطة التسويقية
+                </h1>
+                <p class="text-base md:text-lg text-dark-brown/80">
+                    علب التغليف الفاخرة، بروشور الأصناف، الإعلان المرئي بالذكاء الاصطناعي، وحملات التواصل الاجتماعي.
+                </p>
+            </div>
+
+            <!-- المطبوعات وعلب الضيافة -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
+                <div class="bg-white p-5 rounded-2xl shadow-md border border-warm-gold/30">
+                    <img src="img/p9.jpg" alt="علب التغليف وأكياس الهدايا" class="portrait-img mb-4">
+                    <h3 class="font-bold text-lg text-royal-green mb-2">علب الضيافة والأكياس الفاخرة</h3>
+                    <p class="text-sm text-dark-brown/75 leading-relaxed">تغليف ملكي باللون الأخضر الغامق والزخارف الذهبية لعلب الحلويات وصواني المناسبات والأعياد.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-md border border-warm-gold/30">
+                    <img src="img/p10.jpg" alt="تنسيق التغليف والعلب" class="portrait-img mb-4">
+                    <h3 class="font-bold text-lg text-royal-green mb-2">مجموعات الهدايا وعلب الصفيح</h3>
+                    <p class="text-sm text-dark-brown/75 leading-relaxed">معلبات ومستلزمات الضيافة الموزعة بعناية مع أكياس ورقية تحمل هوية سويتي.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-md border border-warm-gold/30">
+                    <img src="img/p11.jpg" alt="دفتر الفواتير وقسائم الطلب" class="portrait-img mb-4">
+                    <h3 class="font-bold text-lg text-royal-green mb-2">دفتر الطلبات وفواتير المبيعات</h3>
+                    <p class="text-sm text-dark-brown/75 leading-relaxed">إيصالات طلبات خارجية بترويسة رسمية تحمل شعار المحل وأرقام التواصل في شارع الميدان.</p>
+                </div>
+            </div>
+
+            <!-- الكتالوج والبروشور -->
+            <div class="bg-cream-card rounded-3xl p-8 mb-14 border border-warm-gold/30">
+                <h2 class="text-2xl font-extrabold text-royal-green mb-6 text-center">البروشور التعريفي وقائمة الأصناف</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white p-6 rounded-2xl shadow-md border border-warm-gold/20">
+                        <span class="block font-bold text-sm text-royal-green mb-3 text-center">البروشور بشكل مستقيم</span>
+                        <img src="img/p12.jpg" alt="بروشور مستقيم" class="w-full h-auto object-contain rounded-xl border shadow-inner">
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md border border-warm-gold/20">
+                        <span class="block font-bold text-sm text-royal-green mb-3 text-center">البروشور بزاوية مائلة</span>
+                        <img src="img/p13.jpg" alt="بروشور مائل" class="w-full h-auto object-contain rounded-xl border shadow-inner transform hover:scale-[1.01] transition">
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم الفيديو الإعلاني التفاعلي (مع تصغير البوردر الخارجي وإضافة مسافة أسفله mb-14) -->
+            <div class="bg-dark-brown text-[#FAF6F0] rounded-2xl p-5 md:p-6 mb-14 shadow-xl border border-warm-gold/30 max-w-2xl mx-auto">
+                <div class="text-center mb-5">
+                    <span class="px-3 py-1 rounded-full bg-warm-gold/20 text-warm-gold font-bold text-xs border border-warm-gold/30">الإعلان المرئي والريلز</span>
+                    <h2 class="text-xl md:text-2xl font-extrabold text-warm-gold mt-2">
+                        الفيديو الإعلاني الترويجي للمحل (AI Video)
+                    </h2>
+                    <p class="text-[#FAF6F0]/80 text-xs mt-1">مشاهد مونتاج سريعة مصممة بالذكاء الاصطناعي لافتتاح فرع شارع الميدان</p>
+                </div>
+
+                <div class="bg-[#1a0e0e] p-4 rounded-xl border border-warm-gold/20 text-center relative overflow-hidden">
+                    <!-- حاوية الفيديو الطولي 9:16 المباشر -->
+                    <div class="reel-video-container relative rounded-xl overflow-hidden mb-3 border border-warm-gold/30 shadow-lg bg-black">
+                        <video class="w-full h-full object-cover rounded-lg" controls poster="1000051598.jpg">
+                            <source src="img/VID-20261116-WA6352.mp4" type="video/mp4">
+                            متصفحك لا يدعم عرض الفيديو.
+                        </video>
+                    </div>
+                    <h3 class="font-bold text-base text-warm-gold mb-1">الفيديو الترويجي الرسمي (Reels & Promo)</h3>
+                    <!-- <p class="text-[11px] text-[#FAF6F0]/70">يمكنك تشغيل الفيديو مباشرة والتحكم بالعرض بجودة عالية.</p> -->
+                </div>
+            </div>
+
+            <!-- التواجد الرقمي وغلاف الفيسبوك -->
+            <div class="bg-royal-green text-[#FAF6F0] rounded-3xl p-8 md:p-10 mb-14 shadow-xl">
+                <h2 class="text-2xl font-extrabold text-warm-gold mb-6 text-center">غلاف صفحة فيسبوك والتسويق الرقمي</h2>
+                <div class="max-w-4xl mx-auto bg-[#113024] p-6 rounded-2xl border border-warm-gold/40 text-center">
+                    <div class="w-full overflow-hidden rounded-xl mb-4 border border-warm-gold/30 bg-black/20 p-2">
+                        <img src="img/p14.jpg" alt="غلاف صفحة فيسبوك" class="w-full h-auto max-h-[420px] object-contain mx-auto rounded-lg">
+                    </div>
+                    <h3 class="font-bold text-lg text-warm-gold mb-2">غلاف فيسبوك الرسمي (Facebook Cover)</h3>
+                    <p class="text-sm text-[#FAF6F0]/80">تصميم بصري متكامل يعرض واجهة سويتي ومنتجاتها مع شعار المحل وأرقام التوصيل في حمص.</p>
+                </div>
+            </div>
+
+            <!-- قسم الخطة التسويقية وحملات وسائل التواصل الاجتماعي (مع تعديل لون النصوص لوضوح تام) -->
+            <div class="bg-white rounded-3xl p-8 md:p-10 shadow-lg border border-warm-gold/40 max-w-5xl mx-auto mb-10">
+                <div class="text-center mb-8">
+                    <span class="px-3.5 py-1 rounded-full bg-royal-green/10 text-royal-green font-bold text-xs">إستراتيجية الانتشار والترويج</span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-royal-green mt-2">
+                        الخطة التسويقية وحملات وسائل التواصل الاجتماعي
+                    </h2>
+                    <p class="text-dark-brown/70 text-sm mt-1">آلية استهداف الجمهور وإبراز هوية "سويتي" عبر المنصات الرقمية المختلفة</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- فيسبوك -->
+                    <div class="bg-cream-card p-6 rounded-2xl border border-warm-gold/20 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <h3 class="font-bold text-base text-royal-green mb-2">حملات فيسبوك (Facebook)</h3>
+                            <p class="text-xs font-semibold text-royal-green leading-relaxed mb-4">
+                                التركيز على بناء المجتمع المحلي في حمص، نشر بوسترات الافتتاح، الإعلانات الممولة للعائلات، وتفعيل الرسائل المباشرة لتلقي طلبات التوصيل والضيافة.
+                            </p>
+                        </div>
+                        <span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md self-start">التفاعل وبناء العائلة</span>
+                    </div>
+
+                    <!-- إنستغرام -->
+                    <div class="bg-cream-card p-6 rounded-2xl border border-warm-gold/20 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-500 via-pink-600 to-purple-700 text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <h3 class="font-bold text-base text-royal-green mb-2">حملات إنستغرام (Instagram)</h3>
+                            <p class="text-xs font-semibold text-royal-green leading-relaxed mb-4">
+                                عرض الجماليات البصرية للمنتجات، ريلز تحضير البوظة العربية والبقلاوة، وتنسيق القصص اليومية (Stories) لعروض المذاق اليومي والعلب الفاخرة.
+                            </p>
+                        </div>
+                        <span class="text-[11px] font-bold text-pink-700 bg-pink-50 px-2.5 py-1 rounded-md self-start">الجاذبية البصرية والريلز</span>
+                    </div>
+
+                    <!-- تويتر / إكس -->
+                    <div class="bg-cream-card p-6 rounded-2xl border border-warm-gold/20 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-neutral-900 text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                            <h3 class="font-bold text-base text-royal-green mb-2">منصة إكس / تويتر (X)</h3>
+                            <p class="text-xs font-semibold text-royal-green leading-relaxed mb-4">
+                                مشاركة الأخبار السريعة، الإعلانات الرسمية للمحل في شارع الميدان، والتفاعل المباشر مع آراء الزوار والمتابعـين بأسلوب تفاعلي راقٍ.
+                            </p>
+                        </div>
+                        <span class="text-[11px] font-bold text-neutral-800 bg-neutral-100 px-2.5 py-1 rounded-md self-start">الأخبار والمتابعة الحية</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- زر العودة للصفحة الأولى -->
+            <div class="text-center">
+                <button onclick="switchPage(1)" class="bg-dark-brown text-[#FAF6F0] px-8 py-4 rounded-2xl font-bold text-base shadow-lg hover:bg-black transition inline-flex items-center gap-3 border border-warm-gold">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <span>العودة للصفحة الأولى: الهوية والمنتجات والمتجر</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- التذييل -->
+    <footer class="bg-dark-brown text-[#FAF6F0]/80 py-8 text-center text-sm border-t border-warm-gold/30">
+        <p class="font-bold text-warm-gold text-base mb-1">بوظة وحلويات سويتي</p>
+        <p>حمص - سوريا - شارع الميدان | جميع الحقوق محفوظة &copy; 2026</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.hero-swiper', {
+            loop: true,
+            autoplay: { delay: 3500, disableOnInteraction: false },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        });
+
+        function switchPage(pageNumber) {
+            const p1 = document.getElementById('page-1');
+            const p2 = document.getElementById('page-2');
+            if (pageNumber === 1) {
+                p1.classList.remove('hidden');
+                p2.classList.add('hidden');
+            } else {
+                p1.classList.add('hidden');
+                p2.classList.remove('hidden');
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
+
